@@ -3,8 +3,8 @@ using System;
 
 Console.ForegroundColor = ConsoleColor.Green;
 
-SumNum3 ej7 = new SumNum3();
-ej7.verSuma();
+//SumNum3 ej7 = new SumNum3();
+//ej7.verSuma();
 
 //NumMayor3 ej6 = new NumMayor3();
 //ej6.Mayor();
@@ -18,8 +18,9 @@ ej7.verSuma();
 //Sumatoria_M5 ej3 = new Sumatoria_M5();
 //ej3.sumatoria();
 
-//Division ej2 = new Division();
+Division ej2 = new Division(5,3);
 //ej2.division();
+Console.WriteLine(ej2._cociente);
 
 //Par_impar Ej1 = new Par_impar();
 //Ej1.numero();

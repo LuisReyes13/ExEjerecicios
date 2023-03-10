@@ -16,18 +16,11 @@ namespace ExEjerecicios
 
             Console.WriteLine($"Dados los numeros '{n1}', '{n2}', '{n3}'");
 
-            if (n1 > n2)
-            {
-                if (n1 > n3)
-                    mostrarmayor(n1);
-                else if (n3 > n2)
-                    mostrarmayor(n3);
-                else
-                    mostrarmayor(n2);
-            }
-            else if (n2 > n3)
+            if (n1 > n2 && n1 > n3)
+                mostrarmayor(n1);
+            else if (n2 > n1 && n2 > n3)
                 mostrarmayor(n2);
-            else if (n3 > n1)
+            else if (n3> n1 && n3 > n2)
                 mostrarmayor(n3);
             else
                 Console.WriteLine("Todos los numeros son del mismo valor ¬¬");

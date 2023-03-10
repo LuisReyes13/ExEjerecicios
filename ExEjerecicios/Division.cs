@@ -8,6 +8,18 @@ namespace ExEjerecicios
 {
     internal class Division
     {
+        /*
+        private float _dividendo { get; set; }
+        private float _divisor { get; set; }
+        public float _cociente { get { return _dividendo / _divisor; } }
+        private int _resto { get;}
+        public Division(float dividendo, float divisor)
+        {
+            this._dividendo = dividendo;
+            this._divisor = divisor;
+            //_cociente = _dividendo / _divisor;
+            //_resto = (int)(_dividendo % _divisor);
+        }*/
         public void division()
         {
             float res;
