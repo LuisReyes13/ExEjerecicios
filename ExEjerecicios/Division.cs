@@ -10,17 +10,21 @@ namespace ExEjerecicios
     {
         public void division()
         {
-            int n;
-            string vn;
-            bool esNumero;
-
-            do
+            float res;
+            float n1 = Utilerias.validarnum("Ingresa primer valor: ");
+            Console.Clear();
+            float n2 = Utilerias.validarnum("Ingresa segundo valor: ");
+            Console.Clear();
+            if (n1 > n2)
             {
-                Console.Write("Ingresa primer numero entero: ");
-                vn = Console.ReadLine();
-                esNumero = int.TryParse(vn, out n);
-                Console.Clear();
-            } while (!esNumero);
+                res = n1 / n2;
+                Console.WriteLine($"La division de {n1}/{n2} = {res}");
+            }
+            else
+            {
+                res = n2 / n1;
+                Console.WriteLine($"La division de {n2}/{n1} = {res}");
+            }
         }
     }
 }

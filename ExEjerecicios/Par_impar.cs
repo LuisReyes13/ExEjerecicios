@@ -12,23 +12,13 @@ namespace ExEjerecicios
     {
         public void numero()
         {
-            int n;
-            string vn;
-            bool esNumero;
-
-            do
-            {
-                Console.Write("Ingresa un numero entero: ");
-                vn = Console.ReadLine();
-                esNumero = int.TryParse(vn, out n);
-                Console.Clear();
-            } while (!esNumero);
+            int n = Utilerias.validarint("Ingresa un valor: ");
+            Console.Clear();
 
             if (n % 2 == 0)
                 Console.WriteLine($"El numero {n} es un numero: Par");
             else
                 Console.WriteLine($"El numero {n} es un numero: Impar");
         }
-
     }
 }
