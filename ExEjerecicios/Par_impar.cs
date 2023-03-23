@@ -20,5 +20,13 @@ namespace ExEjerecicios
             else
                 Console.WriteLine($"El numero {n} es un numero: Impar");
         }
+
+        /* Mostrar numeros pares ascendentemente
+        for (int n = 0;n <= 100 && n%2==0; n+=2)
+        {
+            if (n != 0)
+            Console.WriteLine(n);
+        }
+        */
     }
 }

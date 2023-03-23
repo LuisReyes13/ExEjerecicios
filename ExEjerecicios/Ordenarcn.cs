@@ -20,8 +20,7 @@ namespace ExEjerecicios
         public void ordenarnumlinq()
         {
             List<int> numeros = new List<int>() { 250, 100, 23, 145, 122, 432, 107, 109, 265, 194, 1 };
-            List<int> nord = numeros.OrderBy(x => x).ToList();
-            foreach (int x in nord)
+            foreach (int x in numeros.OrderBy(x => x).ToList())
                 Console.WriteLine(x);
         }
     }
